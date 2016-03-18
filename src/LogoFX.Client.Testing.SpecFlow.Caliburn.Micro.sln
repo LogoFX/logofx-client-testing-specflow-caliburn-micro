@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Client.Testing.SpecFlow.Caliburn.Micro.Platform.NET45", "Platform\net45\LogoFX.Client.Testing.SpecFlow.Caliburn.Micro.Platform.NET45.csproj", "{2C2741A4-A65B-46F0-8E78-FFE0A021E1A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C2741A4-A65B-46F0-8E78-FFE0A021E1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2741A4-A65B-46F0-8E78-FFE0A021E1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2741A4-A65B-46F0-8E78-FFE0A021E1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2741A4-A65B-46F0-8E78-FFE0A021E1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
