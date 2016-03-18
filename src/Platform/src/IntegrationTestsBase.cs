@@ -2,7 +2,7 @@
 using LogoFX.Client.Testing.Shared;
 using Solid.Practices.IoC;
 
-namespace LogoFX.Client.Tests.SpecFlow.Caliburn.Micro
+namespace LogoFX.Client.Testing.SpecFlow.Caliburn.Micro
 {
     /// <summary>
     /// Base class for client integration tests.
