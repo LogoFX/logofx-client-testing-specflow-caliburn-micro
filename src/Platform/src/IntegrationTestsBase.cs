@@ -1,5 +1,6 @@
 ﻿using Attest.Testing.Core;
 using LogoFX.Client.Testing.Shared;
+using Solid.Bootstrapping;
 using Solid.Practices.IoC;
 
 namespace LogoFX.Client.Testing.SpecFlow.Caliburn.Micro
@@ -7,12 +8,14 @@ namespace LogoFX.Client.Testing.SpecFlow.Caliburn.Micro
     /// <summary>
     /// Base class for client integration tests.
     /// </summary>
-    /// <typeparam name="TContainer"></typeparam>
-    /// <typeparam name="TRootViewModel"></typeparam>
+    /// <typeparam name="TContainerAdapter"></typeparam>
+    /// <typeparam name="TRootObject"></typeparam>
     /// <typeparam name="TBootstrapper"></typeparam>
-    public abstract class IntegrationTestsBase<TContainer, TRootViewModel, TBootstrapper> : 
-        Attest.Testing.SpecFlow.IntegrationTestsBase<TContainer, TRootViewModel, TBootstrapper>
-        where TContainer : IIocContainer, new() where TRootViewModel : class
+    public abstract class IntegrationTestsBase<TContainerAdapter, TRootObject, TBootstrapper> : 
+        Attest.Testing.SpecFlow.IntegrationTestsBase<TContainerAdapter, TRootObject, TBootstrapper>
+        where TContainerAdapter : IIocContainer, new() 
+        where TRootObject : class
+        where TBootstrapper : IInitializable, IHaveContainerAdapter<TContainerAdapter>, new()
     {
         private readonly InitializationParametersResolutionStyle _resolutionStyle;
 
